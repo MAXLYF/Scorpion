@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | SCORPION RP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index (1).html" class="nav-logo">
+    <img src="logo.png" alt="Scorpion RP Logo" class="nav-logo-img"> SCORPION RP
+  </a>
+  <ul class="nav-links">
+    <li><a href="index (1).html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="rules.html">Rules</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="https://discord.gg/scorpionrp">Discord</a></li>
+  </ul>
+  <a href="index (1).html#how-to-join" class="nav-cta">PLAY NOW</a>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="section-tag">Get In Touch</div>
+    <h1 class="hero-title">Contact <span>Us</span></h1>
+    <p class="section-desc" style="margin: 0 auto;">Have a question or need support? Our team is here to help you.</p>
+  </div>
+</section>
+
+<!-- CONTACT CONTENT -->
+<section id="contact-page">
+  <div class="contact-container">
+    <div class="contact-form-card reveal">
+      <form id="contact-form" onsubmit="handleFormSubmit(event)">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" id="subject" placeholder="What is this about?" required>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea id="message" rows="5" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">SEND MESSAGE</button>
+      </form>
+    </div>
+
+    <div class="contact-info-grid reveal">
+      <div class="info-card">
+        <h4>Discord Support</h4>
+        <p>The fastest way to get help is via our Discord server. Open a ticket in the #support channel.</p>
+        <a href="https://discord.gg/scorpionrp" class="btn-secondary" style="margin-top: 15px; font-size: 0.8rem; padding: 8px 20px;">JOIN DISCORD</a>
+      </div>
+      <div class="info-card" style="border-left-color: var(--pink);">
+        <h4>Server Info</h4>
+        <p><strong>IP:</strong> play.scorpionrp.com:22003</p>
+        <p><strong>Version:</strong> MTA:SA 1.6+</p>
+        <p><strong>Location:</strong> Europe / US</p>
+      </div>
+      <div class="info-card" style="border-left-color: var(--purple);">
+        <h4>Business Inquiries</h4>
+        <p>For partnerships or media requests, please email us at:</p>
+        <p style="color: var(--pink);">admin@scorpionrp.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo"><img src="logo.png" alt="" class="footer-logo-img"> SCORPION RP</span>
+      <p>The premier MTA San Andreas Role Play server. Immersive, fair, and community-driven since day one.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index (1).html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="rules.html">Server Rules</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Scorpion Role Play. All rights reserved.</p>
+    <p>Made with <img src="logo.png" alt="" class="sting-img"> by Scorpion RP Team</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    alert(`Thanks for reaching out, ${name}! Your message has been sent to the Scorpion RP team.`);
+    document.getElementById('contact-form').reset();
+  }
+</script>
+</body>
+</html>

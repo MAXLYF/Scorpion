@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | SCORPION RP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index (1).html" class="nav-logo">
+    <img src="logo.png" alt="Scorpion RP Logo" class="nav-logo-img"> SCORPION RP
+  </a>
+  <ul class="nav-links">
+    <li><a href="index (1).html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="rules.html">Rules</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="https://discord.gg/scorpionrp">Discord</a></li>
+  </ul>
+  <a href="index (1).html#how-to-join" class="nav-cta">PLAY NOW</a>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="section-tag">Capturing Moments</div>
+    <h1 class="hero-title">Server <span>Gallery</span></h1>
+    <p class="section-desc" style="margin: 0 auto;">Explore the vibrant life of Scorpion Role Play through our community's lens.</p>
+  </div>
+</section>
+
+<!-- GALLERY CONTENT -->
+<section id="gallery-page">
+  <div class="gallery-filters reveal">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="city">City</button>
+    <button class="filter-btn" data-filter="cars">Cars</button>
+    <button class="filter-btn" data-filter="events">Events</button>
+    <button class="filter-btn" data-filter="rp">Roleplay</button>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item reveal" data-category="city" onclick="openLightbox(this)">
+      <img src="public/downtown city.jfif" alt="Downtown Los Santos" class="gallery-img">
+      <div class="overlay"><span>Downtown Los Santos</span></div>
+    </div>
+    <div class="gallery-item reveal" data-category="rp" onclick="openLightbox(this)">
+      <img src="public/PoliceChase.jfif" alt="Police Chase" class="gallery-img">
+      <div class="overlay"><span>Police Chase</span></div>
+    </div>
+    <div class="gallery-item reveal" data-category="city" onclick="openLightbox(this)">
+      <img src="public/playerhousing.jfif" alt="Player Housing" class="gallery-img">
+      <div class="overlay"><span>Player Housing</span></div>
+    </div>
+    <div class="gallery-item reveal" data-category="events" onclick="openLightbox(this)">
+      <img src="public/gta 5 events.jfif" alt="Community Event" class="gallery-img">
+      <div class="overlay"><span>Community Event</span></div>
+    </div>
+    <div class="gallery-item reveal" data-category="cars" onclick="openLightbox(this)">
+      <img src="public/gang.jfif" alt="Underground Meet" class="gallery-img">
+      <div class="overlay"><span>Underground Meet</span></div>
+    </div>
+    <div class="gallery-item reveal" data-category="rp" onclick="openLightbox(this)">
+      <img src="public/gang members.jfif" alt="Gang Territory" class="gallery-img">
+      <div class="overlay"><span>Gang Territory</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  <div id="lightbox-content"></div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo"><img src="logo.png" alt="" class="footer-logo-img"> SCORPION RP</span>
+      <p>The premier MTA San Andreas Role Play server. Immersive, fair, and community-driven since day one.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index (1).html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="rules.html">Server Rules</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Scorpion Role Play. All rights reserved.</p>
+    <p>Made with <img src="logo.png" alt="" class="sting-img"> by Scorpion RP Team</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  function openLightbox(item) {
+    const imgSrc = item.querySelector('.gallery-img').src;
+    const content = document.getElementById('lightbox-content');
+    content.innerHTML = `<img src="${imgSrc}" alt="Gallery Image">`;
+    document.getElementById('lightbox').classList.add('active');
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+  }
+  
+  // Simple filter logic
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const items = document.querySelectorAll('.gallery-item');
+  
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      
+      items.forEach(item => {
+        if (filter === 'all' || item.dataset.category === filter) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

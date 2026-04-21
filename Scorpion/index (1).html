@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SCORPION ROLE PLAY | MTA San Andreas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="public/logo.png" alt="Scorpion RP Logo" class="nav-logo-img"> SCORPION RP
+  </a>
+  <ul class="nav-links">
+    <li><a href="index (1).html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="rules.html">Rules</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#join">Discord</a></li>
+  </ul>
+  <a href="#how-to-join" class="nav-cta">PLAY NOW</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <img src="public/logo.png" alt="" class="hero-logo-bg">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span></span> MTA San Andreas &nbsp;|&nbsp; Role Play Server
+    </div>
+    <h1 class="hero-title">
+      <span class="line1">SCORPION</span>
+      <span class="line2">ROLE PLAY</span>
+    </h1>
+    <p class="hero-sub">The Most <span>Immersive</span> RP Experience in SA</p>
+    <div class="hero-ip" onclick="copyIP()">
+      <div>
+        <span class="label">SERVER IP</span>
+        <strong id="ip-text">play.scorpionrp.com:22003</strong>
+      </div>
+      <span class="copy-icon">⎘</span>
+    </div>
+    <div class="hero-buttons">
+      <a href="#how-to-join" class="btn-primary"><i class="fas fa-gamepad"></i> JOIN SERVER</a>
+      <a href="#features" class="btn-secondary"><i class="fas fa-compass"></i> EXPLORE CITY</a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+<div class="copied-toast" id="toast">IP COPIED!</div>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-container">
+    <div class="stat-card reveal">
+      <i class="fas fa-users"></i>
+      <span class="stat-num" data-target="500">0</span>
+      <span class="stat-label">Online Players</span>
+    </div>
+    <div class="stat-card reveal">
+      <i class="fas fa-user-plus"></i>
+      <span class="stat-num" data-target="12000">0</span>
+      <span class="stat-label">Registered Accounts</span>
+    </div>
+    <div class="stat-card reveal">
+      <i class="fas fa-shield-alt"></i>
+      <span class="stat-num" data-target="48">0</span>
+      <span class="stat-label">Active Factions</span>
+    </div>
+    <div class="stat-card reveal">
+      <i class="fas fa-clock"></i>
+      <span class="stat-num" data-target="24">0</span>
+      <span class="stat-label">Hours Uptime / Day</span>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="section-tag">What We Offer</div>
+  <h2 class="section-title">Built For <span>Real Role Play</span></h2>
+  <p class="section-desc">Scorpion RP is engineered from the ground up to deliver the most authentic and deep role-play experience MTA:SA has to offer.</p>
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <span class="feature-icon">🏙️</span>
+      <div class="feature-title">Open World Life</div>
+      <p class="feature-desc">Live, work, and thrive in a fully dynamic San Andreas. Buy property, run businesses, and shape your own story.</p>
+    </div>
+    <div class="feature-card reveal">
+      <span class="feature-icon">👮</span>
+      <div class="feature-title">Law & Order</div>
+      <p class="feature-desc">Join the LSPD, SASD, or FBI. Enforce the law, investigate crimes, and keep the city safe — or tear it apart.</p>
+    </div>
+    <div class="feature-card reveal">
+      <span class="feature-icon">🔫</span>
+      <div class="feature-title">Crime & Gangs</div>
+      <p class="feature-desc">Rise through criminal organizations, run drug operations, plan heists, and dominate the underground economy.</p>
+    </div>
+    <div class="feature-card reveal">
+      <span class="feature-icon">🏥</span>
+      <div class="feature-title">Civilian Jobs</div>
+      <p class="feature-desc">Choose from 20+ legal careers — trucker, medic, mechanic, farmer, chef, reporter, and more.</p>
+    </div>
+    <div class="feature-card reveal">
+      <span class="feature-icon">🚗</span>
+      <div class="feature-title">Custom Vehicles</div>
+      <p class="feature-desc">Hundreds of custom-modded vehicles, realistic driving physics, and a full dealership system.</p>
+    </div>
+    <div class="feature-card reveal">
+      <span class="feature-icon">⚖️</span>
+      <div class="feature-title">Active Staff</div>
+      <p class="feature-desc">24/7 admin support, strict anti-cheat enforcement, and a fair ban appeal system.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO JOIN -->
+<section id="how-to-join">
+  <div class="section-tag">Getting Started</div>
+  <h2 class="section-title">Join <span>Scorpion RP</span></h2>
+  <p class="section-desc">Follow these steps to get in-game within minutes. No complicated setup required.</p>
+  <div class="steps">
+    <div class="step reveal">
+      <div class="step-num">01</div>
+      <div class="step-info">
+        <h3>Download MTA: San Andreas</h3>
+        <p>Install Multi Theft Auto and GTA: San Andreas on your PC. MTA:SA is free to download.</p>
+        <code>multitheftauto.com/download</code>
+      </div>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">02</div>
+      <div class="step-info">
+        <h3>Open Server Browser</h3>
+        <p>Launch MTA:SA and navigate to the server browser. Click "Internet" to search for online servers.</p>
+      </div>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">03</div>
+      <div class="step-info">
+        <h3>Search Scorpion Role Play</h3>
+        <p>Search for "SCORPION ROLE PLAY" or connect directly using our server IP.</p>
+        <code onclick="copyIP()" style="cursor:pointer;">play.scorpionrp.com:22003 &nbsp;⎘</code>
+      </div>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">04</div>
+      <div class="step-info">
+        <h3>Register & Create Character</h3>
+        <p>Create your account in-game, design your character, and begin your story in San Andreas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RULES -->
+<div id="rules">
+  <div class="inner">
+    <div class="section-tag">Code of Conduct</div>
+    <h2 class="section-title">Server <span>Rules</span></h2>
+    <p class="section-desc">All players must follow these core rules at all times to keep the RP fair and immersive.</p>
+    <div class="rules-grid">
+      <div class="rule-item reveal">
+        <span class="rule-num">01</span>
+        <div class="rule-content">
+          <h4>No Deathmatch (DM)</h4>
+          <p>Killing without a valid in-character reason is forbidden. All conflict must be story-driven.</p>
+        </div>
+      </div>
+      <div class="rule-item reveal">
+        <span class="rule-num">02</span>
+        <div class="rule-content">
+          <h4>No Metagaming</h4>
+          <p>Using out-of-character information to influence in-character decisions is not allowed.</p>
+        </div>
+      </div>
+      <div class="rule-item reveal">
+        <span class="rule-num">03</span>
+        <div class="rule-content">
+          <h4>No Powergaming</h4>
+          <p>Do not force actions on other players or perform unrealistic feats for unfair advantages.</p>
+        </div>
+      </div>
+      <div class="rule-item reveal">
+        <span class="rule-num">04</span>
+        <div class="rule-content">
+          <h4>Respect All Players</h4>
+          <p>Harassment, racism, and hate speech are permanently bannable offenses.</p>
+        </div>
+      </div>
+      <div class="rule-item reveal">
+        <span class="rule-num">05</span>
+        <div class="rule-content">
+          <h4>No Hacking / Cheating</h4>
+          <p>Any form of cheating or exploiting bugs will result in a permanent ban.</p>
+        </div>
+      </div>
+      <div class="rule-item reveal">
+        <span class="rule-num">06</span>
+        <div class="rule-content">
+          <h4>Stay In Character</h4>
+          <p>Always maintain your character while in-game. Use /ooc for out-of-character chat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="section-tag">Screenshots</div>
+  <h2 class="section-title">Life in <span>San Andreas</span></h2>
+  <div class="gallery-grid">
+    <div class="gallery-item reveal">
+      <img src="public/downtown city.jfif" alt="Downtown Los Santos" class="gallery-img">
+      <div class="overlay"><span>Downtown Los Santos</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <img src="public/PoliceChase.jfif" alt="Police Chase" class="gallery-img">
+      <div class="overlay"><span>Police Chase</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <img src="public/playerhousing.jfif" alt="Player Housing" class="gallery-img">
+      <div class="overlay"><span>Player Housing</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <img src="public/gang.jfif" alt="Rural San Andreas" class="gallery-img">
+      <div class="overlay"><span>Rural San Andreas</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <img src="public/gang members.jfif" alt="Gang Territory" class="gallery-img">
+      <div class="overlay"><span>Gang Territory</span></div>
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 40px;">
+    <a href="gallery.html" class="btn-secondary">View Full Gallery</a>
+  </div>
+</section>
+<!-- JOIN US SECTION -->
+<section class="join-section">
+  <div class="join-particles">
+    <div class="particle" style="top: 10%; left: 10%;"></div>
+    <div class="particle" style="bottom: 20%; right: 10%; background: var(--purple);"></div>
+  </div>
+  <div class="join-container">
+    <div class="section-tag reveal">Connect With Us</div>
+    <h2 class="section-title reveal">JOIN THE <span>COMMUNITY</span></h2>
+    <p class="section-desc reveal" style="margin: 0 auto;">Connect with Scorpion RP across all platforms and never miss an update.</p>
+    
+    <div class="join-grid">
+      <!-- DISCORD -->
+      <div class="join-card card-discord reveal" onclick="window.open('https://discord.gg/scorpionrp','_blank')">
+        <div class="card-bg-overlay" style="background-image: url('public/DISCORD.jfif');"></div>
+        <div class="card-content">
+          <i class="fab fa-discord card-icon"></i>
+          <h3 class="card-title">DISCORD</h3>
+          <p class="card-desc">Join 5,000+ members for chat, support, and exclusive announcements.</p>
+          <a href="#" class="btn-primary">JOIN SERVER</a>
+        </div>
+      </div>
+      
+      <!-- YOUTUBE -->
+      <div class="join-card card-youtube reveal" onclick="window.open('#','_blank')">
+        <div class="card-bg-overlay" style="background-image: url('public/YOUTUBE.jfif');"></div>
+        <div class="card-content">
+          <i class="fab fa-youtube card-icon"></i>
+          <h3 class="card-title">YOUTUBE</h3>
+          <p class="card-desc">Watch the latest trailers, event recaps, and gameplay highlights.</p>
+          <a href="#" class="btn-primary" style="background: linear-gradient(135deg, #ff0000, #b20000);">WATCH NOW</a>
+        </div>
+      </div>
+      
+      <!-- INSTAGRAM -->
+      <div class="join-card card-insta reveal" onclick="window.open('#','_blank')">
+        <div class="card-bg-overlay" style="background-image: url('public/INSTAGRAM.jfif');"></div>
+        <div class="card-content">
+          <i class="fab fa-instagram card-icon"></i>
+          <h3 class="card-title">INSTAGRAM</h3>
+          <p class="card-desc">Follow us for daily snapshots, server sneak peeks, and story highlights.</p>
+          <a href="#" class="btn-primary" style="background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);">FOLLOW US</a>
+        </div>
+      </div>
+
+      <!-- FORUMS -->
+      <div class="join-card card-web reveal" onclick="window.open('#','_blank')">
+        <div class="card-bg-overlay" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=1000');"></div>
+        <div class="card-content">
+          <i class="fas fa-globe card-icon"></i>
+          <h3 class="card-title">FORUMS</h3>
+          <p class="card-desc">Engage in deep discussions, post ban appeals, and read full server guides.</p>
+          <a href="#" class="btn-primary" style="background: var(--grad);">VISIT FORUM</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo"><img src="logo.png" alt="" class="footer-logo-img"> SCORPION RP</span>
+      <p>The premier MTA San Andreas Role Play server. Immersive, fair, and community-driven since day one.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index (1).html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="rules.html">Server Rules</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Community</h4>
+      <ul>
+        <li><a href="#">Discord Server</a></li>
+        <li><a href="#">Forums</a></li>
+        <li><a href="#">Ban Appeals</a></li>
+        <li><a href="#">Staff Application</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Server Info</h4>
+      <ul>
+        <li><a href="#" onclick="copyIP();return false;">Copy Server IP</a></li>
+        <li><a href="#">Server Status</a></li>
+        <li><a href="#">Changelog</a></li>
+        <li><a href="#">Donate</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Scorpion Role Play. All rights reserved.</p>
+    <p>Made with <img src="logo.png" alt="" class="sting-img"> by Scorpion RP Team</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
